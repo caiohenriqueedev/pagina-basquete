@@ -1,0 +1,50 @@
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container {
+  text-align: center;
+  top: 50%;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+#searchform {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo (input e botão) à direita */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  width: 100%; /* Faz o formulário ocupar toda a largura */
+}
+
+#searchinput {
+  padding-right: 10px; /* Adiciona um pequeno espaço entre o texto e a borda direita */
+  margin-right: 10px; /* Adiciona um espaço entre o input e o botão */
+  width: 200px; /* Define uma largura fixa para o input */
+}
+
+h1 {
+  font-size: 15px;
+  
+}
+
+.nbasite {
+  text-align: center;
+}
+
+body {
+  background-color: #004292;
+}
+
+.proximosjogos {
+  text-align: left;
+}
