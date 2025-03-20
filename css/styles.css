@@ -34,7 +34,12 @@
 
 h1 {
   font-size: 15px;
+  background-color: #004292;
   
+}
+
+.sinopsenba {
+  background-color: #004292;
 }
 
 .nbasite {
