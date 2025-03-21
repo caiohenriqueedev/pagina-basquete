@@ -101,3 +101,61 @@ th {
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+.logos {
+  width: 50px;
+  margin-left: 50px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* colocando icones dos times da nba lado a lado */
+/* Estilo para o contêiner das logos */
+.logos-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre os dois contêineres */
+  margin-bottom: 20px; /* Adiciona um espaço para garantir que o conteúdo de baixo não se sobreponha */
+}
+
+/* Estilos para as logos à esquerda e à direita */
+.logos-left,
+.logos-right {
+  flex: 1; /* Para que os dois se estiquem igualmente */
+  padding: 10px;
+}
+
+/* Estilos para os logos em si */
+.logos {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os títulos */
+h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Título das conferências */
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Garante que o conteúdo abaixo das logos não seja afetado */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+

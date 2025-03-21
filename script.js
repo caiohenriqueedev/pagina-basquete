@@ -1,9 +1,3 @@
-var logoElement = document.createElement("img");
-
-logoElement.src = "minnesota.png";
-
-document.body.appendChild(logoElement);
-
 // REDIRECIONAR PARA OUTRO SITE
 // Objeto com URLs das logos dos times
 const logosTimes = {
