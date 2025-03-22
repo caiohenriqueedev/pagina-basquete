@@ -114,11 +114,16 @@ th, td {
 }
 
 table {
+  position: absolute;
+  top: 0; /* Alinha no topo da página */
+  left: 0; /* Alinha à esquerda */
+  width: 50%; /* Ajuste a largura conforme necessário */
   border-collapse: collapse;
-  width: 100%;
 }
 
 /* colocando icones dos times da nba lado a lado */
+
+
 /* Estilo para o contêiner das logos */
 .logos-container {
   display: flex;
