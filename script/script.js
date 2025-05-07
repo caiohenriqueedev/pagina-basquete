@@ -111,3 +111,40 @@ function buscarTimes() {
 
 // Busca os times ao carregar a página
 window.onload = buscarTimes;
+
+// enquete e comentarios
+// enquete e comentarios
+function enviarComentario() {
+  const texto = document.getElementById("comentario").value;
+  fetch("php/enviar_comentario.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: "texto=" + encodeURIComponent(texto)
+  }).then(() => {
+    document.getElementById("comentario").value = "";
+    carregarComentarios();
+  });
+}
+
+function carregarComentarios() {
+  fetch("carregar_comentarios.php")
+    .then(res => res.json()) // Agora esperamos um JSON com os comentários
+    .then(comentarios => {
+      const comentariosContainer = document.getElementById("comentarios");
+      comentariosContainer.innerHTML = ''; // Limpa a área de comentários
+
+      // Adiciona cada comentário na tela
+      comentarios.forEach(comentario => {
+        const comentarioDiv = document.createElement("div");
+        comentarioDiv.classList.add("comentario");
+
+        // Exibe o texto do comentário
+        comentarioDiv.innerHTML = `
+          <p><strong>Comentário de ${comentario.id}:</strong> ${comentario.texto}</p>
+          <p><small>Data: ${comentario.data}</small></p>
+        `;
+        comentariosContainer.appendChild(comentarioDiv);
+      });
+    })
+    .catch(err => console.error('Erro ao carregar comentários:', err));
+}
