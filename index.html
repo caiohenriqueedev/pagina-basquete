@@ -12,6 +12,10 @@
     <header>
       <h2>confira as ultimas noticias sobre NBA:</h2>
       <nav>
+
+        <a href="index.html" class="logoNba">
+          <img src="img/nbalogo.png" alt="logo">
+        </a>
         <ul>
           <a href="index.html"> PAGINA HOME</a>
           <br>
@@ -182,7 +186,7 @@
       <h1>Placares NBA ao Vivo</h1>
     <div id="placar">Carregando...</div>
     </div>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 
 
     <table id="nba-table">
@@ -267,6 +271,16 @@
         <tr>
         <td><img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065648.png&w=350&h=254" alt="Tatum">5.Jayson Tatum (27.1 pontos por jogo)</td>
         </tr>
+
+        <h2>Comentários</h2>
+      <textarea id="comentario" placeholder="Escreva aqui..."></textarea><br>
+      <button onclick="enviarComentario()">Enviar Comentário</button>
+      <div id="comentarios"></div>
+
+      <h2>Vote no Melhor Jogador</h2>
+      <button onclick="votar('Jogador 1')">Jogador 1</button>
+      <button onclick="votar('Jogador 2')">Jogador 2</button>
+      <div id="votos"></div>
       
       </tbody>
     </table>
